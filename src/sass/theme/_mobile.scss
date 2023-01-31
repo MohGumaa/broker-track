@@ -1,0 +1,23 @@
+// Widescreens 1400px
+@include mediaXXl {
+}
+
+// Widescreens 1200px
+@include mediaXl {
+}
+
+// Disktops & Laptops 900px
+@include mediaLg {
+}
+
+// Tablets & Small Laptops 768px
+@include mediaMd {
+}
+
+// Smartphones 576px up
+@include mediaSm {
+}
+
+// Extra Smartphones 576px down
+@include mediaXs {
+}

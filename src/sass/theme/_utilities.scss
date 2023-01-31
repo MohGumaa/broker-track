@@ -1,0 +1,88 @@
+:root {
+	--clr-primary: #1f7c99;
+	--clr-secondary: #99b1bc;
+	--clr-success: #3eb056;
+	--clr-dark: #0f0f0f;
+	--clr-danger: #ed1414;
+	--clr-info: #16d8d8;
+	--clr-white: #fff;
+	--clr-text: #b1b1b1;
+}
+
+@mixin easeInOut {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Utilities class */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+ul,
+.widget {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@mixin mediaXs {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@mixin mediaSm {
+	@media screen and (min-width: 577px) and (max-width: 767px) {
+		@content;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin mediaMd {
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		@content;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin mediaLg {
+	@media screen and (min-width: 992px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin mediaXl {
+	@media screen and (min-width: 1200px) and (max-width: 1399px) {
+		@content;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@mixin mediaXXl {
+	@media screen and (min-width: 1400px) {
+		@content;
+	}
+}
